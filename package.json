@@ -1,0 +1,12 @@
+{
+  "name": "braingames",
+  "description": "description",
+  "authors": "pablo",
+  "version": "1.0.0",
+  "main": "pathToMain",
+  "dependencies": {},
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
+}
