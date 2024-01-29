@@ -10,5 +10,11 @@
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^27.6.3"
   }
 }
