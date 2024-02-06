@@ -6,7 +6,7 @@ const greeting = (name) => {
 
 const randNum = (maxNum) => Math.floor(Math.random() * maxNum);
 
-const askName = () => readlineSync.question('May I have your name?: ');
+const askName = () => readlineSync.question('May I have your name? ');
 
 const checkAnswer = (answer, correctAnswer) => {
   if (answer === correctAnswer) {
