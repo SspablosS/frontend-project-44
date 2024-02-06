@@ -33,8 +33,7 @@ const startGame = (round, question) => {
     }
   }
 
-  console.log(`Congratulations, ${name}`);
-  return true;
+  return `Congratulations, ${name}`;
 };
 
 export { greeting };
