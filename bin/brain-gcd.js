@@ -21,4 +21,4 @@ const playRound = () => {
   return checkAnswer(answer, correctAnswer);
 };
 
-startGame(playRound, question);
+console.log(startGame(playRound, question));
