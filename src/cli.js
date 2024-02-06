@@ -29,7 +29,7 @@ const startGame = (round, question) => {
 
   for (let i = 0; i < 3; i += 1) {
     if (!round(name)) {
-      return `Let's try again, ${name}`;
+      return `Let's try again, ${name}!`;
     }
   }
 
