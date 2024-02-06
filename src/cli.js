@@ -33,7 +33,7 @@ const startGame = (round, question) => {
     }
   }
 
-  console.log(`Congradulations, ${name}`);
+  console.log(`Congratulations, ${name}`);
   return true;
 };
 
