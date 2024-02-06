@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const greeting = (name) => {
-  console.log(`Hello ${name}!`);
+  console.log(`Hello, ${name}!`);
 };
 
 const randNum = (maxNum) => Math.floor(Math.random() * maxNum);
