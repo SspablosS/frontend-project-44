@@ -1,9 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const greeting = (name) => {
-  console.log('Welcome to the Brain Games!');
   console.log(`Hello ${name}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no"');
 };
 
 const randNum = (maxNum) => Math.floor(Math.random() * maxNum);
@@ -24,8 +22,10 @@ const checkAnswer = (answer, correctAnswer) => {
 };
 
 const startGame = (round) => {
+  console.log('Welcome to the Brain Games!');
   const name = askName();
   greeting(name);
+  console.log('Answer "yes" if the number is even, otherwise answer "no"');
 
   for (let i = 0; i < 3; i += 1) {
     if (!round(name)) {
@@ -33,7 +33,8 @@ const startGame = (round) => {
     }
   }
 
-  return `Congradulations, ${name}`;
+  console.log(`Congradulations, ${name}`);
+  return true;
 };
 
 export { greeting };
