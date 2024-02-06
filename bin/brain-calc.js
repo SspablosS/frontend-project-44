@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 import { randNum, checkAnswer, startGame } from '../src/cli.js';
 
 const operators = ['+', '-', '*'];
-
+const question = 'What is the result of the expression?';
 const playRound = () => {
   const num1 = randNum(20);
   const num2 = randNum(20);
@@ -20,4 +20,4 @@ const playRound = () => {
   return checkAnswer(answer, correctAnswer);
 };
 
-startGame(playRound);
+startGame(playRound, question);

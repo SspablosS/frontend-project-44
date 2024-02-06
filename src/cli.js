@@ -21,11 +21,11 @@ const checkAnswer = (answer, correctAnswer) => {
   return false;
 };
 
-const startGame = (round) => {
+const startGame = (round, question) => {
   console.log('Welcome to the Brain Games!');
   const name = askName();
   greeting(name);
-  console.log('Answer "yes" if the number is even, otherwise answer "no"');
+  console.log(`${question}`);
 
   for (let i = 0; i < 3; i += 1) {
     if (!round(name)) {

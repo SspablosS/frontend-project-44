@@ -3,6 +3,7 @@
 import readlineSync from 'readline-sync';
 import { randNum, checkAnswer, startGame } from '../src/cli.js';
 
+const question = 'Answer "yes" if the number is even, otherwise answer "no".';
 const playRound = () => {
   const num = randNum(100);
   console.log(`Question: ${num}`);
@@ -18,4 +19,4 @@ const playRound = () => {
   return checkAnswer(answer, correctAnswer);
 };
 
-startGame(playRound);
+startGame(playRound, question);
