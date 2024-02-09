@@ -7,7 +7,7 @@ const playRound = () => {
   const num2 = randNum(20);
   const answer = getAnswerInt(`${num1} ${num2}`);
 
-  let correctAnswer = 1;
+  let correctAnswer = Math.max(num1, num2);
   for (let i = 1; i <= Math.min(num1, num2); i += 1) {
     if (num1 % i === 0 && num2 % i === 0) {
       correctAnswer = i;
