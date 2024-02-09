@@ -39,7 +39,7 @@ const startGame = (round, question) => {
 
 const getAnswerString = (expression) => {
   console.log(`Question: ${expression}`);
-  return readlineSync.questionString('Your answer: ');
+  return readlineSync.question('Your answer: ');
 };
 
 const getAnswerInt = (expression) => {
