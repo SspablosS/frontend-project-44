@@ -1,4 +1,4 @@
-import { randNum, checkAnswer, getAnswerInt } from '../cli.js';
+import { randNum, checkAnswer, getAnswerString } from '../cli.js';
 
 const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -11,7 +11,7 @@ const isPrime = (num) => {
 
 const playRound = () => {
   const num = randNum(100);
-  const answer = getAnswerInt(num);
+  const answer = getAnswerString(num);
 
   let correctAnswer = 'no';
 
