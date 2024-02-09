@@ -30,11 +30,11 @@ const startGame = (round, question) => {
 
   for (let i = 0; i < 3; i += 1) {
     if (!round(name)) {
-      return `Let's try again, ${name}!`;
+      return console.log(`Let's try again, ${name}!`);
     }
   }
 
-  return `Congratulations, ${name}!`;
+  return console.log(`Congratulations, ${name}!`);
 };
 
 export { greeting };

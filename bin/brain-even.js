@@ -3,4 +3,4 @@
 import { startGame } from '../src/cli.js';
 import { playRound, question } from '../src/games/brain-even.js';
 
-console.log(startGame(playRound, question));
+startGame(playRound, question);
