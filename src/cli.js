@@ -37,8 +37,20 @@ const startGame = (round, question) => {
   return console.log(`Congratulations, ${name}!`);
 };
 
+const getAnswerString = (expression) => {
+  console.log(`Question: ${expression}`);
+  return readlineSync.questionString('Your answer: ');
+};
+
+const getAnswerInt = (expression) => {
+  console.log(`Question: ${expression}`);
+  return readlineSync.questionInt('Your answer: ');
+};
+
 export { greeting };
 export { randNum };
 export { askName };
 export { checkAnswer };
 export { startGame };
+export { getAnswerString };
+export { getAnswerInt };

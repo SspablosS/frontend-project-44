@@ -1,11 +1,9 @@
-import readlineSync from 'readline-sync';
-import { randNum, checkAnswer } from '../cli.js';
+import { randNum, checkAnswer, getAnswerString } from '../cli.js';
 
 const question = 'Answer "yes" if the number is even, otherwise answer "no".';
 const playRound = () => {
   const num = randNum(100);
-  console.log(`Question: ${num}`);
-  const answer = readlineSync.question('Your answer: ');
+  const answer = getAnswerString(num);
 
   let correctAnswer;
   if (num % 2 === 0) {

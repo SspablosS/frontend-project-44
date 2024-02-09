@@ -1,5 +1,4 @@
-import readlineSync from 'readline-sync';
-import { randNum, checkAnswer } from '../cli.js';
+import { randNum, checkAnswer, getAnswerInt } from '../cli.js';
 
 const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -12,8 +11,7 @@ const isPrime = (num) => {
 
 const playRound = () => {
   const num = randNum(100);
-  console.log(`Question: ${num}`);
-  const answer = readlineSync.question('Your answer: ');
+  const answer = getAnswerInt(num);
 
   let correctAnswer = 'no';
 

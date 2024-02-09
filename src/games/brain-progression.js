@@ -1,5 +1,4 @@
-import readlineSync from 'readline-sync';
-import { checkAnswer } from '../cli.js';
+import { checkAnswer, getAnswerInt } from '../cli.js';
 
 const question = 'What number is missing in the progression?';
 
@@ -18,8 +17,7 @@ const playRound = () => {
   progression[hiddenIndex] = '..';
   progression.join(' ');
 
-  console.log(`Question: ${progression.join(' ')}`);
-  const answer = readlineSync.questionInt('Your answer: ');
+  const answer = getAnswerInt(`${progression.join(' ')}`);
 
   return checkAnswer(answer, correctAnswer);
 };
